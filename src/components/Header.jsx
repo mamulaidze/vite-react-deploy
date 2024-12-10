@@ -11,6 +11,7 @@ export default function Header() {
     const [click, setClick] = useState(true);
 
     const handleClick = () => setClick(!click);
+    const closeMenu = () => setClick(true);
 
     return (
         <header className="container flex justify-between items-center px-4 py-2 bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg overflow-hidden">
@@ -43,6 +44,7 @@ export default function Header() {
                     {navList.map((item) => (
                         <li key={item.name}>
                             <a
+                                onClick={closeMenu}
                                 href="#"
                                 className="block px-3 py-2 text-lg font-medium rounded hover:bg-gray-700 hover:text-yellow-400 transition-colors duration-200"
                             >
