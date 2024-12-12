@@ -12,6 +12,7 @@ const App = () => {
       <Routes>
         {/*//!  home page */}
         <Route path='/' element={<Home/>}/>
+        <Route path="*" element={<Home />}/>
         {/*//! mwerlebi */}
         <Route path='mwerlebi' element={<Writer/>}/>
         {/*//! poetebi */}
