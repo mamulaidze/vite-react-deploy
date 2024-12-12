@@ -11,7 +11,7 @@ const Question = () => {
   return (
     <h2
       id="question"
-      className="text-blue-200 text-2xl opacity-0 transition-opacity duration-1000 bg-gray-800 bg-opacity-80 p-3 rounded-md shadow-sm"
+      className="text-blue-200 text-xl opacity-0 transition-opacity duration-1000 bg-gray-800 bg-opacity-80 p-3 rounded-md shadow-sm"
     >
       რაში დაგეხმარებათ ჩვენი გვერდი?
     </h2>
