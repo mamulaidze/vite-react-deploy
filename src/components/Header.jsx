@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 export default function Header() {
     const navList = [
-        {name: "მთავარი" , path: "/home"},
+        {name: "მთავარი" , path: "/"},
         { name: "მწერლები", path: "/mwerlebi"},
         { name: "პოეტები", path: "/poetebi"},
         
