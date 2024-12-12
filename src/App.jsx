@@ -4,7 +4,6 @@ import {Route,Routes} from 'react-router-dom'
 import Writer from './pages/mwelebi/Writer'
 import Poet from './pages/poetebi/Poet'
 import Home from './pages/Home'
-import Foooter from './components/Footer'
 const App = () => {
   return (
     <>
@@ -18,7 +17,6 @@ const App = () => {
         {/*//! poetebi */}
         <Route path='poetebi' element={<Poet/>}/>
       </Routes>
-      <Foooter/>
     </>
   )
 }

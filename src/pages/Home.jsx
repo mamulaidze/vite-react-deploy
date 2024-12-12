@@ -2,6 +2,7 @@ import React from 'react'
 import FadeInText from '../ui/OurGoal'
 import Question from '../ui/Question'
 import Info from '../ui/Info'
+import Foooter from '../components/Footer'
 export default function Home() {
   return (
     <main className="container mx-auto">
@@ -20,6 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Foooter />
     </main>
   )
 }
