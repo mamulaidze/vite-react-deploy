@@ -4,19 +4,24 @@ import {Route,Routes} from 'react-router-dom'
 import Writer from './pages/mwelebi/Writer'
 import Poet from './pages/poetebi/Poet'
 import Home from './pages/Home'
+import ChavchNaw from './pages/mwelebi/Chavchavadze.jsx/ChavchNaw'
 const App = () => {
   return (
     <>
       <Header/>
       <Routes>
-        {/*//!  home page */}
-        <Route path='/' element={<Home/>}/>
-        <Route path="*" element={<Home />}/>
-        {/*//! mwerlebi */}
-        <Route path='mwerlebi' element={<Writer/>}/>
-        {/*//! poetebi */}
-        <Route path='poetebi' element={<Poet/>}/>
-      </Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="*" element={<Home />} />
+
+  {/* Nested Writer Routes */}
+  <Route path="mwerlebi" element={<Writer />}>
+    <Route path="chavchavadzisnawarmoebebi" element={<ChavchNaw />} />
+  </Route>
+
+  {/* Poet Route */}
+  <Route path="poetebi" element={<Poet />} />
+</Routes>
+
     </>
   )
 }
